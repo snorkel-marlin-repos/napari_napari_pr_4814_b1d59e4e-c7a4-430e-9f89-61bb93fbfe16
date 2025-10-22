@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
@@ -87,7 +87,7 @@ jobs:
           target: ${{ matrix.target }}
 
       - name: Check out code for the container build
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
 
   # ----
 
@@ -107,7 +107,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
 
       - name: Continue if Singularity Recipe Exists
         run: |
